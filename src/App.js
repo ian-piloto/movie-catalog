@@ -101,8 +101,7 @@ export default function App() {
   const handleCloseModal = () => setModalMovie(null);
 
   useEffect(() => {
-    // Busca inicial por 'Action', SEM filtro de ano ('')
-    searchMovies('Action', ''); 
+    searchMovies('horror', ''); 
   }, []);
 
   const isSearchMode = view === 'search';
